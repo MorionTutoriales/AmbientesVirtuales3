@@ -85,14 +85,14 @@ public class GestionMensajesServidor : MonoBehaviour
 
 		switch (pl)
 		{
-			case Plataformas.movil:
+			case Plataformas.Movil:
 				msj = "AT00";
 				p0.id_con = _id_conn;
 				p0.posicion = tr.position;
 				p0.rotacion = tr.eulerAngles;
 				msj += JsonUtility.ToJson(p0);
 				break;
-			case Plataformas.windows:
+			case Plataformas.Windows:
 				msj = "AT00";
 				p0.id_con = _id_conn;
 				p0.posicion = tr.position;

@@ -32,7 +32,8 @@ public class SRVActualizarTransdformacion : MonoBehaviour
 			if ((posAnterior - transform.position).sqrMagnitude > _toleranciaPosicion ||
                 (rotAnterior - transform.eulerAngles).sqrMagnitude > _toleranciaPosicion*50)
 			{
-                GestionMensajesServidor.singeton.EnviarActualizacionTransform(id_conn, transform, Plataformas.movil);
+                // ********************************* OJO CON ESTE QUE SOLO MANDA MOVIL! ***********************
+                GestionMensajesServidor.singeton.EnviarActualizacionTransform(id_conn, transform, Plataformas.Movil);
 			}
             posAnterior = transform.position;
             rotAnterior = transform.eulerAngles;

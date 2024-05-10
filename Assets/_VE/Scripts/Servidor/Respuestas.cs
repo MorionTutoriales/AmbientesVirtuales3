@@ -7,13 +7,6 @@ public class Respuestas : MonoBehaviour
 
 }
 
-public enum Plataformas
-{
-	movil = 0,
-	windows = 1,
-	VR = 2
-}
-
 [System.Serializable]
 public class Presentacion
 {
